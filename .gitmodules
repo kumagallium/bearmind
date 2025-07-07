@@ -1,6 +1,3 @@
-[submodule "bearmind-vault"]
-	path = bearmind-vault
-	url = https://github.com/kumagallium/bearmind-vault.git
 [submodule "content"]
 	path = content
 	url = https://github.com/kumagallium/bearmind-vault.git
