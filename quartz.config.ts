@@ -8,17 +8,19 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    // ─────────────── ヘッダーのタイトルをHTMLに置き換え ───────────────
+    
+    pageTitle: "Bearmind",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: { provider: "plausible" },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
+
+    // ─────────────── テーマカラーをロゴに合わせる ───────────────
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -29,25 +31,25 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light:      "#FAF4EE",  // 背景をロゴに近いクリーム色に
+          lightgray:  "#E5D6C5",
+          gray:       "#B8A392",
+          darkgray:   "#6E584D",
+          dark:       "#3F2A22",
+          secondary:  "#8B5E3C",  // ロゴのブラウン
+          tertiary:   "#D9B08C",
+          highlight:  "rgba(143, 159, 169, 0.15)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light:      "#1F1E1C",
+          lightgray:  "#3E3B39",
+          gray:       "#646464",
+          darkgray:   "#D4D4D4",
+          dark:       "#EBEBEC",
+          secondary:  "#A67853",
+          tertiary:   "#84A59D",
+          highlight:  "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
       },
